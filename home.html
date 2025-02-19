@@ -15,8 +15,76 @@
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
-                <div class="artboard artboard-demo phone-1">
-                    <h1>Welcome Home</h1>
+                <div class="artboard artboard-demo phone-3">
+                    <!-- Balance Display Start -->
+                    <div class="stats shadow flex justify-center">
+                        <div class="stat">
+                            <div class="stat-title">Current Balance</div>
+
+                            <div id="current-Balance" class="stat-value">500</div>
+
+                        </div>
+                    </div>
+                    <!-- Balance Display End -->
+
+                    <div class="divider"></div>
+
+                    <!-- Add Money and Send Money Button Start -->
+                    <div class="flex">
+                        <button id="add-money-display-btn" class="btn btn-primary mr-2">ADD MONEY</button>
+                        <button id="cashout-display-btn" class="btn btn-secondary ml-2">CASHOUT</button>
+                    </div>
+                    <!-- Add Money and Send Money Button End -->
+
+                    <div class="divider"></div>
+
+                    <!-- Add Money Start -->
+                    <div id="add-money-field" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Add Money Amount</span>
+                                </label>
+                                <input id="add-money-input" type="text" placeholder="Enter Add Money Amount"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin</span>
+                                </label>
+                                <input id="pin-input" type="password" placeholder="Enter your Pin Number"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="add-money-btn" class="btn btn-primary">ADD MONEY</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Add Money End -->
+
+                    <!-- Cashout Start -->
+                    <div id="cashout-field" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Cashout Amount</span>
+                                </label>
+                                <input id="cashout-input" type="text" placeholder="Enter Cashout Amount"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin</span>
+                                </label>
+                                <input id="cashout-pin-input" type="password" placeholder="Enter your Pin Number"
+                                    class="input input-bordered" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="cashout-btn" class="btn btn-secondary">Cashout</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Cashout End -->
 
                 </div>
             </div>
@@ -24,7 +92,7 @@
         <!-- Mobile Mockup End -->
     </div>
 
-    <script src="js/login.js"></script>
+    <script src="js/utility.js"></script>
 </body>
 
 </html>
